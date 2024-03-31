@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
     <style>
-        body, h1, h2, h3, h4, h5, h6  {
+        body, h1, h2, h3, h4, h5, h6 {
           font-family: Helvetica, Arial, sans-serif;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            font-family: Helvetica;
+            font-size: 8px;
         }
         .image-container {
             display: flex;
             justify-content: center;
+            align-items: center;
+        }
+        .image-section {
+            display: flex;
+            justify-content: space-around;
             align-items: center;
         }
         img {
@@ -41,9 +53,6 @@
         <h3 align="center">Cornell University Class of 2027
             <br>Economics Major | Computer Science Minor | Information Science Minor<br>
         </h3>
-        <div class="image-container">
-            <img src="images/signature.png" width="70">
-        </div>
         <br>
         <div class="image-container">
             <a href="https://www.west-windsor-plainsboro.k12.nj.us/" target="_blank">
@@ -56,14 +65,16 @@
             <br> - Jalen Hurts</h4>
 
         <div class="header-section">
-            <h2><a href="files/resume.pdf" target="_blank">Resume</a></h2>
+            <h2><a href="files/resumeV2.pdf" target="_blank">Resume</a></h2>
             <h2><a href="projects.html">Projects</a></h2>
             <h2><a href="extras.html">Extras</a></h2>
         </div>
 
-        <a href="files/resume.pdf" target="_blank"><img src="images/resume.png" width="200" style="position:relative; left:135px;"></a>
-        <a href="projects.html"><img src="images/projects.png" width="200" style="position:relative; left:400px;"></a>
-        <a href="extras.html"><img src="images/extras.png" width="400" style="position:relative; left:575px;"></a>
+        <div class="image-section">
+            <a href="files/resumeV2.pdf" target="_blank"><img src="images/resume.png" width="200"></a>
+            <a href="projects.html"><img src="images/projects.png" width="200"></a>
+            <a href="extras.html"><img src="images/extras.png" width="200"></a>
+        </div>
 
     </body>
     
