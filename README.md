@@ -1,6 +1,6 @@
 # Personal Website
 
-All the files used in the creation my personal [website(nikhilchinchalkar.com)].
+All the files used in the creation my personal [website](nikhilchinchalkar.com).
 
 ## Built with
 
