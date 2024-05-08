@@ -1,0 +1,124 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.paragraph p, .paragraph a{
+    text-indent: 50px;
+    text-align: left;
+    max-width: 70%;
+    margin: 0 auto;
+    line-height: 2;
+    text-decoration: none;
+}
+
+.center-italics p{
+    text-align: center;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.spotify-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.image-container p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footnote ol {
+    text-align: left;
+    max-width: 70%;
+    margin: 0 auto;
+    line-height: 1;
+    font-size: smaller;
+}
+
+.citations{
+    text-align: left;
+    max-width: 50%;
+    text-indent: -5em;
+    margin: 0 auto;
+    font-size: smaller;
+}
+
+td {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33.3%;
+}
+
+table {
+    display: flexbox;
+    max-width: 80%;
+}
+
+a {
+    color: inherit;
+}
+
+a:focus{
+    outline: none;
+}
+
+table img { 
+    transition: box-shadow 0.3s ease; 
+} 
+
+table img:hover { 
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5); 
+} 
+
+html{scroll-behavior:smooth}
+
+.author-list{
+    text-align: center;
+}
+
+/* Image ticker */
+
+#container {
+    height: 90px;
+    position:relative; 
+    overflow:hidden;
+  }
+  
+  .photobanner {
+    position:absolute; 
+    top:0px; 
+    left:0px; 
+    overflow:hidden; 
+    white-space: nowrap;
+    animation: bannermove 15s linear infinite;
+  }
+  
+  .photobanner img {    
+    margin: 0 0.5em 
+  }
+  
+  @keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+  }
