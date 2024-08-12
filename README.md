@@ -5,7 +5,7 @@ All the files used in the creation my personal [website](https://nikhilchinchalk
 ## Built with
 
 * **Blender**: Used for creating the icons and reference images
-* **Visual Studio Code**: Writing HTML and CSS code to build the site
+* **Visual Studio Code**: Writing HTML, CSS, and JS code to build the site
 
 ## Author
 
