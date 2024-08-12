@@ -61,6 +61,47 @@ img {
     100% {opacity:0; content:"\"I don't know anybody who needs a critic to find out what art is.\"\A- Jean-Michel Basquiat";}
 }
 
+#butterfly {
+    position: fixed;
+    left: 0px;
+    top: 30px;
+    max-width: 250px;
+    max-height: 250px;
+    z-index: -1;
+    /* min-width: 10%;
+    min-height: 10%; */
+    /* border: 5px solid black; */
+
+    animation: butterfly 7s ease-in-out;
+    animation-delay: 2s;
+}
+
+@keyframes butterfly {
+    0% {left: 0}
+    25% {top: 100px}
+    75% {top: 0px}
+    100% {left: 100%}
+}
+
+#butterfly-landing {
+    position: absolute;
+    left: 50%;
+    top: 42px;
+    max-width: 250px;
+    max-height: 250px;
+    z-index: -1;
+    transform: translateX(-27%);
+    /* border: 5px solid black; */
+
+    animation: butterfly-landing 2s ease-in;
+    animation-delay: 7s;
+}
+
+@keyframes butterfly-landing {
+    0% {top: -150px}
+    100% {top: 40px}
+}
+
 a {
     color: inherit;
 }
