@@ -7,6 +7,7 @@ h5,
 h6 {
     font-family: Helvetica, Arial, sans-serif;
     /* cursor: url(https://placehold.co/32x32), auto; */
+
 }
 
 footer {
@@ -69,16 +70,18 @@ img {
     height: 140.62px;
     z-index: -1;
     /* border: 5px solid black; */
-
-    animation: butterfly 7s ease-in-out;
-    animation-delay: 2s;
 }
 
 @keyframes butterfly {
-    0% {left: 0}
+    0% {left: 0; top: 30px;}
     25% {top: 100px}
     75% {top: 0px}
     100% {left: 100%}
+}
+
+.butterfly-animation {
+    animation: butterfly 7s ease-in-out;
+    animation-delay: 2s;
 }
 
 #butterfly-landing {
