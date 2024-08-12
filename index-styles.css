@@ -65,11 +65,9 @@ img {
     position: fixed;
     left: 0px;
     top: 30px;
-    max-width: 250px;
-    max-height: 250px;
+    width: auto;
+    height: 140.62px;
     z-index: -1;
-    /* min-width: 10%;
-    min-height: 10%; */
     /* border: 5px solid black; */
 
     animation: butterfly 7s ease-in-out;
@@ -87,8 +85,8 @@ img {
     position: absolute;
     left: 50%;
     top: 42px;
-    max-width: 250px;
-    max-height: 250px;
+    width: auto;
+    height: 140.62px;
     z-index: -1;
     transform: translateX(-27%);
     /* border: 5px solid black; */
