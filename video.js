@@ -10,11 +10,9 @@ videoacross.addEventListener("ended", function () {
 });
 
 //once the landing video has ended, switch to the looping video
-videolanding.addEventListener("ended", function () {
-    videolanding.setAttribute('src', "images/butterfly-loop.mp4");
-    videolanding.setAttribute('loop', true);
-    videolanding.play();
-});
+// videolanding.addEventListener("ended", function () {
+//     videolanding.setAttribute('src', "images/butterfly-loop.mp4");
+// });
 
 //once you can play the across video, play it with the animation 
 //(needed so that slow loading sites don't have the animation start before the video)
