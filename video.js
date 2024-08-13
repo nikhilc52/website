@@ -1,3 +1,13 @@
+//this function reloads the page - brute force workaround for dealing with asynchronous animaitions/videos
+if (window.localStorage) {
+    if (!localStorage.getItem('firstLoad')) {
+        localStorage['firstLoad'] = true;
+        window.location.reload();
+    }
+    else
+        localStorage.removeItem('firstLoad');
+}
+
 var videoacross = document.getElementById("butterfly");
 var videolanding = document.getElementById("butterfly-landing");
 
@@ -18,7 +28,5 @@ videoacross.addEventListener("ended", function () {
 //(needed so that slow loading sites don't have the animation start before the video)
 videoacross.addEventListener("canplay", function () {
     videoacross.play();
-    videolanding.classList.remove("butterfly-landing-animation"); //remove the landing animation so when the user goes back, it is reset
     videoacross.classList.add("butterfly-animation");
 });
-
