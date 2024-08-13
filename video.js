@@ -18,6 +18,7 @@ videoacross.addEventListener("ended", function () {
 //(needed so that slow loading sites don't have the animation start before the video)
 videoacross.addEventListener("canplay", function () {
     videoacross.play();
+    videolanding.classList.remove("butterfly-landing-animation"); //remove the landing animation so when the user goes back, it is reset
     videoacross.classList.add("butterfly-animation");
 });
 
