@@ -105,6 +105,12 @@ img {
     100% {top: 58px}
 }
 
+*::-webkit-media-controls-start-playback-button {
+    display: none!important;
+    -webkit-appearance: none;
+  }
+
 a {
     color: inherit;
 }
+
