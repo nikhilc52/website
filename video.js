@@ -1,18 +1,18 @@
+var videoacross = document.getElementById("butterfly");
 var videolanding = document.getElementById("butterfly-landing");
 
-videolanding.addEventListener("canplay", function () {
+videoacross.addEventListener("ended", function () {
     setTimeout(function () {
         videolanding.play();
-    }, 7000);
+    }, 500);
+    videolanding.classList.add("butterfly-landing-animation");
 });
 
 videolanding.addEventListener("ended", function () {
     videolanding.setAttribute('src', "images/butterfly-loop.mp4");
-    videolanding.load();
     videolanding.play();
 });
 
-var videoacross = document.getElementById("butterfly");
 videoacross.addEventListener("canplay", function () {
     videoacross.play();
     videoacross.classList.add("butterfly-animation");
