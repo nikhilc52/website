@@ -9,10 +9,10 @@ videoacross.addEventListener("ended", function () {
     videolanding.classList.add("butterfly-landing-animation");
 });
 
-//once the landing video has ended, switch to the looping video and make the poster a still for time inbetween loops
+//once the landing video has ended, switch to the looping video
 videolanding.addEventListener("ended", function () {
     videolanding.setAttribute('src', "images/butterfly-loop.mp4");
-    videolanding.setAttribute('poster', "images/butterfly-loop-still.png");
+    videolanding.setAttribute('loop', true);
     videolanding.play();
 });
 
