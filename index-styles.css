@@ -105,10 +105,14 @@ img {
     100% {top: 58px}
 }
 
-*::-webkit-media-controls-start-playback-button {
-    display: none!important;
-    -webkit-appearance: none;
-  }
+@media only screen and (max-width: 992px) {
+    #hero-video { display: none; }   /*. hide video on mobile screens*/
+    #mobile-hero-image {display: inline-block;}
+}
+@media (min-width: 993px){
+    #hero-video {display: inline-block; }
+    #mobile-hero-image {display: none;}
+}
 
 a {
     color: inherit;
