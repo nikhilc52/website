@@ -4,7 +4,7 @@ if (window.localStorage) {
         localStorage['firstLoad'] = true;
         setTimeout(function () {
             window.location.reload(true);
-        }, 10);
+        }, 1000);
     }
     else
         localStorage.removeItem('firstLoad');
