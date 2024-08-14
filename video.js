@@ -1,23 +1,8 @@
 // //this function reloads the page - brute force workaround for dealing with asynchronous animaitions/videos
-// if (window.localStorage) {
-//     if (!localStorage.getItem('firstLoad')) {
-//         localStorage['firstLoad'] = true;
-//         setTimeout(function () {
-//             window.location.reload(true);
-//         }, 1000);
-//     }
-//     else
-//         localStorage.removeItem('firstLoad');
-// }
-
-
 (function () {
     window.onpageshow = function (event) {
-        console.log(event.persisted);
         if (event.persisted) {
-            setTimeout(function () {
-                window.location.reload(true);
-            }, 1000);
+            window.location.reload(true);
         }
     };
 })();
