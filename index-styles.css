@@ -68,7 +68,7 @@ img {
     top: 30px;
     width: auto;
     height: 108px;
-    z-index: -2;
+    z-index: -1;
     /* border: 5px solid black; */
 }
 
