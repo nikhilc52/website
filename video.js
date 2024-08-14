@@ -2,7 +2,9 @@
 if (window.localStorage) {
     if (!localStorage.getItem('firstLoad')) {
         localStorage['firstLoad'] = true;
-        window.location.reload(true);
+        setTimeout(function () {
+            window.location.reload(true);
+        }, 10);
     }
     else
         localStorage.removeItem('firstLoad');
