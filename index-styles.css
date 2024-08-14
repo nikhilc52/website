@@ -10,14 +10,6 @@ h6 {
 
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    height: 50px;
-    font-family: Helvetica;
-    font-size: 8px;
-}
-
 .image-container {
     display: flex;
     justify-content: center;
