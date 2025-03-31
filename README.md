@@ -1,6 +1,6 @@
 # Personal Website
 
-All the files used in the creation my personal [website](https://nikhilchinchalkar.com).
+All the files used in the creation my personal [website](nikhilc52.github.io/website/).
 
 ## Built with
 
